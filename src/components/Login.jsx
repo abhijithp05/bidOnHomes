@@ -12,10 +12,12 @@ import TextField from "@material-ui/core/TextField";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import { setLoginStatus } from "../actions";
 import { ProductService } from "../services/ProductService";
+import Typography from "@material-ui/core/Typography";
 
 const LoginUnwrapped = (props) => {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
+  const [errorMessage, setErrorMessage] = useState(false);
 
   const onUserNameEntered = (e) => {
     setUserName(e.target.value);
@@ -30,10 +32,12 @@ const LoginUnwrapped = (props) => {
       if (response.ErrorCode) {
         localStorage.setItem("login_status", "false");
         props.setLoginStatus(false);
+        setErrorMessage(true);
       } else {
         localStorage.setItem("access_token", response.access_token);
         localStorage.setItem("refresh_token", response.refresh_token);
         localStorage.setItem("login_status", "true");
+        setErrorMessage(false);
         props.setLoginStatus(true);
       }
     });
@@ -61,6 +65,12 @@ const LoginUnwrapped = (props) => {
             />
           </CardContent>
         </CardActionArea>
+
+        {errorMessage && (
+          <Typography color="error" gutterBottom variant="caption" component="p">
+            Invalid Credentials
+          </Typography>
+        )}
         <CardActions css={NoPadding}>
           <Button variant="contained" color="primary" onClick={onLoginClick}>
             Login
