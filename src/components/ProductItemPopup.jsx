@@ -58,7 +58,7 @@ const ProductItemPopupUnwrapped = (props) => {
               <Typography variant="body2" color="textSecondary" component="p">
                 {props.productDetails.description}
               </Typography>
-              <Typography variant="h5" color="textPrimary" component="p">
+              <div>
                 <h3>{"Price: Rs." + props.productDetails.price * quantity}</h3>
                 &nbsp;&nbsp;
                 <Select native value={quantity} onChange={handleQuantityChange}>
@@ -70,7 +70,7 @@ const ProductItemPopupUnwrapped = (props) => {
                     );
                   })}
                 </Select>
-              </Typography>
+              </div>
             </CardContent>
           </CardActionArea>
           <CardActions>

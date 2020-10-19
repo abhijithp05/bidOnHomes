@@ -15,7 +15,6 @@ import ListAltIcon from "@material-ui/icons/ListAlt";
 import { sectionDesktop, grow } from "../styles";
 import { connect } from "react-redux";
 import { setProductListView, setLoginStatus } from "../actions";
-import { FormatListNumberedRtlOutlined } from "@material-ui/icons";
 
 const StyledAppBar = styled(AppBar)`
   ${grow}
@@ -43,6 +42,11 @@ class NavBarUnwrapped extends React.Component {
     this.setAnchorEl(null);
   };
 
+  onLogoutClick = () => {
+    localStorage.setItem("access_token", "");
+    localStorage.setItem("refresh_token", "");
+    localStorage.setItem("login_status", "false");
+  };
   render() {
     const isMenuOpen = Boolean(this.state.anchorEl);
 
@@ -62,6 +66,7 @@ class NavBarUnwrapped extends React.Component {
           onClick={() => {
             this.handleMenuClose();
             this.props.setLoginStatus(false);
+            this.onLogoutClick();
           }}
         >
           Logout

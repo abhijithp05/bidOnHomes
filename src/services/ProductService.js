@@ -1,4 +1,3 @@
-import { setLoginStatus } from "../actions";
 export class ProductService {
   static getProductList() {
     return fetch("https://fakestoreapi.com/products", {

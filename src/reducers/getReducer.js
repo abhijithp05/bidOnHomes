@@ -6,7 +6,7 @@ import {
 } from "../actions";
 
 const inetialState = {
-  loginStatus: localStorage.getItem("login_status") == "true",
+  loginStatus: localStorage.getItem("login_status") === "true",
   productList: [],
   productInCartList: [],
   productListView: true,
