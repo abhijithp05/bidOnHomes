@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/bidOnHomes/static/css/main.47feb0b4.chunk.css",
-    "main.js": "/bidOnHomes/static/js/main.409f7daa.chunk.js",
-    "main.js.map": "/bidOnHomes/static/js/main.409f7daa.chunk.js.map",
+    "main.js": "/bidOnHomes/static/js/main.8f7dde91.chunk.js",
+    "main.js.map": "/bidOnHomes/static/js/main.8f7dde91.chunk.js.map",
     "runtime-main.js": "/bidOnHomes/static/js/runtime-main.0983724d.js",
     "runtime-main.js.map": "/bidOnHomes/static/js/runtime-main.0983724d.js.map",
-    "static/js/2.d5626775.chunk.js": "/bidOnHomes/static/js/2.d5626775.chunk.js",
-    "static/js/2.d5626775.chunk.js.map": "/bidOnHomes/static/js/2.d5626775.chunk.js.map",
+    "static/js/2.87fec7ce.chunk.js": "/bidOnHomes/static/js/2.87fec7ce.chunk.js",
+    "static/js/2.87fec7ce.chunk.js.map": "/bidOnHomes/static/js/2.87fec7ce.chunk.js.map",
     "index.html": "/bidOnHomes/index.html",
-    "precache-manifest.95c311858a02e1d879bac8f1d75b9284.js": "/bidOnHomes/precache-manifest.95c311858a02e1d879bac8f1d75b9284.js",
+    "precache-manifest.1f38093df1c49bb7280ef72e9e42c8cc.js": "/bidOnHomes/precache-manifest.1f38093df1c49bb7280ef72e9e42c8cc.js",
     "service-worker.js": "/bidOnHomes/service-worker.js",
     "static/css/main.47feb0b4.chunk.css.map": "/bidOnHomes/static/css/main.47feb0b4.chunk.css.map",
-    "static/js/2.d5626775.chunk.js.LICENSE.txt": "/bidOnHomes/static/js/2.d5626775.chunk.js.LICENSE.txt"
+    "static/js/2.87fec7ce.chunk.js.LICENSE.txt": "/bidOnHomes/static/js/2.87fec7ce.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0983724d.js",
-    "static/js/2.d5626775.chunk.js",
+    "static/js/2.87fec7ce.chunk.js",
     "static/css/main.47feb0b4.chunk.css",
-    "static/js/main.409f7daa.chunk.js"
+    "static/js/main.8f7dde91.chunk.js"
   ]
 }

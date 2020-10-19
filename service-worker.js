@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/bidOnHomes/precache-manifest.95c311858a02e1d879bac8f1d75b9284.js"
+  "/bidOnHomes/precache-manifest.1f38093df1c49bb7280ef72e9e42c8cc.js"
 );
 
 self.addEventListener('message', (event) => {
